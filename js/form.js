@@ -28,6 +28,11 @@ new Company('Zillow', 'Java', true, ['Ping Pong', 'Foosball'], false, true, 'Lar
 new Company('Nordstrom', ['Java', 'Python'], false, false, false, true, 'Large', '../img/nordstrom.png');
 new Company('Filmic', 'Swift', true, false, false, false, 'small', '../img/filmic.png');
 new Company('Microsoft', ['Javascript', 'asp.net', 'Python'], true, ['Gym', 'Foosball'], false, true, 'Large', '../img/microsoft.jpg');
+new Company('Amazon', 'Java', true, 'Ping Pong', true, true, 'Large', '../img/amazon.png');
+new Company('CDK Global', ['Java', 'Javascript', 'asp.net'], true, 'Ping Pong', true, true, 'Large', '../img/CDK.jpg');
+new Company('Valve', ['asp.net', 'Java', 'Python', 'Javascript'], true, 'Ping Pong', true, false, 'Small', '../img/valve.png');
+new Company('Projekt202', 'Javascript', true, ['Bowling League', 'Ping Pong', 'Foosball'], false, false, 'Small', '../img/projekt202.png');
+new Company('Expedia', ['Javascript', 'Java', 'Python'], true, 'Gym', false, true, 'Large', '../img/expedia.svg');
 
 
 // console.log(Company.filepath);
