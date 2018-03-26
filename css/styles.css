@@ -33,11 +33,26 @@
   display: inline-block;
   padding: 0px 35px;
  }
+ /* h1{
+   line-height: 70px;
+   float: right;
+ } */
 
- /* main */
+ /* Main */
  main{
   width: 960px;
   height: 600px;
   margin: 0 auto;
   border: 1px solid black;
 }
+#form{
+  width: 50%;
+  height: 25%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: gray;
+ }
+
+ input{
+   width: 187px;
+ }
