@@ -1,5 +1,6 @@
 'use strict';
 
+// global arrays with coded answers
 var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
 
 var flexArray = ['flexTrue', 'flexFalse'];
@@ -12,6 +13,8 @@ var volunteerArray = ['volunteerTrue', 'volunteerFalse'];
 
 var sizeArray = ['large', 'small'];
 
+
+//constructor function
 function Company (name, language, flex, stress, pressure, volunteer, size, filepath) {
   this.name = name;
   this.language = language;
@@ -23,6 +26,7 @@ function Company (name, language, flex, stress, pressure, volunteer, size, filep
   this.filepath = filepath;
 }
 
+//company instances
 new Company('Starbucks', 'Java', false, false, true, true, 'Large', '../img/starbucks.jpg');
 new Company('Zillow', 'Java', true, ['Ping Pong', 'Foosball'], false, true, 'Large', '../img/zillow.png');
 new Company('Nordstrom', ['Java', 'Python'], false, false, false, true, 'Large', '../img/nordstrom.png');
@@ -34,6 +38,16 @@ new Company('Valve', ['asp.net', 'Java', 'Python', 'Javascript'], true, 'Ping Po
 new Company('Projekt202', 'Javascript', true, ['Bowling League', 'Ping Pong', 'Foosball'], false, false, 'Small', '../img/projekt202.png');
 new Company('Expedia', ['Javascript', 'Java', 'Python'], true, 'Gym', false, true, 'Large', '../img/expedia.svg');
 
+// grab each question and push into array
 
-// console.log(Company.filepath);
+// increment into next one
 
+// create event listeners
+
+// create event handlers
+
+// functions that interate over the array
+
+// send each company instance and push into local storage (JSON)
+
+// get elements from the DOM
