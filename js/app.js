@@ -4,23 +4,27 @@
 var formElement = document.getElementById('usernameForm');
 
 //store form input in to local storage(create function to accomplish this)
-// function storeData(){
+function setupDataStorage(){
 
-//   var usersAsString = localStorage.getItem('usernameForm'); //assigning the value of local storages pictures
-//   var useableUser = JSON.parse(picsAsString); //parsing pictures from JSON string
-//   if (useableUser && useableUser.length) { //if useable and the length
-//     Products.allProducts = useableUser; //
-//     console.log('Loaded from Local Storage');
-//     return; //quit the function
-//   }
-// }
-//use form validation to confirm they enter some text
+  var storedUsername = localStorage.getItem('newUsername'); //assigning the value of storedUsername the value of our key
+  if (storedUsername && storedUsername.length) { //there is a username
+    alert('Hello ' + storedUsername); //alert helllo ____________
+    // Products.allProducts = storedUsername;
+    console.log('Loaded from Local Storage');
+    return; //quit the function
+  }
+}
+console.log('doing it the hard way');
+
+// TODO: use form validation to confirm they enter some text
 
 // function to handle click event
 function getUserName(event){
   event.preventDefault();
   var newUsername = event.target.username.value;
   console.log(newUsername);
+
+  storeData();
 }
 
 //TODO store the users name in a persons object(profile) so we can reference
@@ -29,8 +33,8 @@ function getUserName(event){
 formElement.addEventListener('submit', getUserName);
 
 // Save to local storage on submit
-// function finish(){
-//   // save to LS
-//   var saveUser = JSON.stringify(Products.allProducts);
-//   localStorage.setItem('username', saveUser);
-// }
+function storeData(){
+  localStorage.setItem('newUsername', event.target.username.value); //setting local storage to drill into event to set value
+}
+
+setupDataStorage();
