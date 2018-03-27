@@ -11,12 +11,12 @@ var userAnswers = [];
 var formElement = document.getElementById('formSubmit');
 
 // arrays with coded answers
-var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
-var flexArray = ['flexTrue', 'flexFalse'];
-var stressArray = ['pingPong', 'foosball', 'videoGames', 'gym', 'bowling', 'nothing'];
-var pressureArray = ['pressureTrue', 'pressureFalse'];
-var volunteerArray = ['volunteerTrue', 'volunteerFalse'];
-var sizeArray = ['large', 'small'];
+// var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
+// var flexArray = ['flexTrue', 'flexFalse'];
+// var stressArray = ['pingPong', 'foosball', 'videoGames', 'gym', 'bowling', 'nothing'];
+// var pressureArray = ['pressureTrue', 'pressureFalse'];
+// var volunteerArray = ['volunteerTrue', 'volunteerFalse'];
+// var sizeArray = ['large', 'small'];
 
 function stringifyCompany() {
   var saveCompany = JSON.stringify(Company.allCompanies);
@@ -24,7 +24,7 @@ function stringifyCompany() {
 }
 
 //constructor function
-function Company (name, language, flex, stress, pressure, volunteer, size, filepath) {
+function Company (name, language, flex, stress, pressure, volunteer, size) {
   this.name = name;
   this.language = language;
   this.flex = flex;
@@ -32,7 +32,7 @@ function Company (name, language, flex, stress, pressure, volunteer, size, filep
   this.pressure = pressure;
   this.volunteer = volunteer;
   this.size = size;
-  this.filepath = filepath;
+  this.counter = 0;
   Company.allCompanies.push(this);
 }
 
@@ -79,25 +79,37 @@ formElement.addEventListener('submit', eventHandler);
 function eventHandler(event){
   event.preventDefault();
 
+  var userNameInput = localStorage.newUsername;
   var languageInput = event.target.language.value;
   var flexScheduleInput = event.target.flex.value;
   var stressRelieverInput = event.target.stress.value;
   var pressureInput = event.target.pressure.value;
   var volunteerInput = event.target.volunteer.value;
   var sizeInput = event.target.size.value;
-  userAnswers.push(languageInput, flexScheduleInput, stressRelieverInput, pressureInput, volunteerInput, sizeInput);
+  userAnswers.push(userNameInput, languageInput, flexScheduleInput, stressRelieverInput, pressureInput, volunteerInput, sizeInput);
+  console.log(userNameInput);
   // console.log(languageInput);
   // console.log(flexScheduleInput);
   // console.log(stressRelieverInput);
   // console.log(pressureInput);
   // console.log(volunteerInput);
   // console.log(sizeInput);
+  compareAnswers();
 }
 
-//create function to compare userAnswers array to each company object
+// create function to compare userAnswers array to each company object
 function compareAnswers(){
-
+  for (var i in Company.allCompanies) {
+    // if (userAnswers.includes(Company.allCompanies[i].language[i])){
+    //   console.log('Lang');
+    // } 
+    if(userAnswers.includes(Company.allCompanies[i].flex)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    }
+  }
 }
+
 
 // remove event listener
 
@@ -109,3 +121,4 @@ function compareAnswers(){
 
 companyList();
 stringifyCompany();
+
