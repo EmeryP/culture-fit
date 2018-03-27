@@ -3,7 +3,7 @@
 Company.allCompanies = [];
 
 // user array
-User.userAnswers = [];
+var userAnswers = [];
 
 // access el from DOM
 // var languageOne = document.getElementById('language1');
@@ -37,12 +37,12 @@ function Company (name, language, flex, stress, pressure, volunteer, size, filep
 }
 
 // Constructor function for user
-function User(username){
-  // this.username = localStorage.newUsername; //gets username from local storage
-  User.userAnswers.push(this); //push all users anwers to userAnswer array
-  console.log(User.username);
-}
-User();
+// function User(username){
+//   // this.username = localStorage.newUsername; //gets username from local storage
+//   User.userAnswers.push(this); //push all users anwers to userAnswer array
+//   console.log(User.username);
+// }
+// User();
 
 function companyList () {
   var pullCompany = localStorage.getItem('listOfCompanies');
@@ -54,16 +54,16 @@ function companyList () {
   }
 
   //company instances
-  new Company('Starbucks', 'Java', false, false, true, true, 'Large', '../img/starbucks.jpg');
-  new Company('Zillow', 'Java', true, ['Ping Pong', 'Foosball'], false, true, 'Large', '../img/zillow.png');
-  new Company('Nordstrom', ['Java', 'Python'], false, false, false, true, 'Large', '../img/nordstrom.png');
-  new Company('Filmic', 'Swift', true, false, false, false, 'small', '../img/filmic.png');
-  new Company('Microsoft', ['Javascript', 'asp.net', 'Python'], true, ['Gym', 'Foosball'], false, true, 'Large', '../img/microsoft.jpg');
-  new Company('Amazon', 'Java', true, 'Ping Pong', true, true, 'Large', '../img/amazon.png');
-  new Company('CDK Global', ['Java', 'Javascript', 'asp.net'], true, 'Ping Pong', true, true, 'Large', '../img/CDK.jpg');
-  new Company('Valve', ['asp.net', 'Java', 'Python', 'Javascript'], true, 'Ping Pong', true, false, 'Small', '../img/valve.png');
-  new Company('Projekt202', 'Javascript', true, ['Bowling League', 'Ping Pong', 'Foosball'], false, false, 'Small', '../img/projekt202.png');
-  new Company('Expedia', ['Javascript', 'Java', 'Python'], true, 'Gym', false, true, 'Large', '../img/expedia.svg');
+  new Company('starbucks', 'java', 'false', 'false', 'true', 'true', 'large', '../img/starbucks.jpg');
+  new Company('zillow', 'java', 'true', ['pingPong', 'foosball'], 'false', 'true', 'large', '../img/zillow.png');
+  new Company('nordstrom', ['java', 'python'], 'false', 'false', 'false', 'true', 'large', '../img/nordstrom.png');
+  new Company('filmic', 'swift', 'true', 'false', 'false', 'false', 'small', '../img/filmic.png');
+  new Company('microsoft', ['javascript', 'asp.net', 'python'], 'true', ['gym', 'foosball'], 'false', 'true', 'large', '../img/microsoft.jpg');
+  new Company('amazon', 'java', 'true', 'pingPong', 'true', 'true', 'large', '../img/amazon.png');
+  new Company('cdk global', ['java', 'javascript', 'asp.net'], 'true', 'pingPong', 'true', 'true', 'large', '../img/CDK.jpg');
+  new Company('valve', ['asp.net', 'java', 'python', 'javascript'], 'true', 'pingPong', 'true', 'false', 'small', '../img/valve.png');
+  new Company('projekt202', 'javascript', 'true', ['bowling', 'pingPong', 'foosball'], 'false', 'false', 'small', '../img/projekt202.png');
+  new Company('expedia', ['javascript', 'java', 'python'], 'true', 'gym', 'false', 'true', 'large', '../img/expedia.svg');
 }
 
 console.log(Company.allCompanies);
@@ -85,16 +85,21 @@ function eventHandler(event){
   var pressureInput = event.target.pressure.value;
   var volunteerInput = event.target.volunteer.value;
   var sizeInput = event.target.size.value;
-  console.log(languageInput);
-  console.log(flexScheduleInput);
-
-  console.log(stressRelieverInput);
-  console.log(pressureInput);
-  console.log(volunteerInput);
-  console.log(sizeInput);
-  
-  
+  userAnswers.push(languageInput, flexScheduleInput, stressRelieverInput, pressureInput, volunteerInput, sizeInput);
+  // console.log(languageInput);
+  // console.log(flexScheduleInput);
+  // console.log(stressRelieverInput);
+  // console.log(pressureInput);
+  // console.log(volunteerInput);
+  // console.log(sizeInput);
 }
+
+//create function to compare userAnswers array to each company object
+function compareAnswers(){
+
+}
+
+// remove event listener
 
 // functions that interate over the array
 
