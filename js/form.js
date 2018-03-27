@@ -6,21 +6,16 @@ Company.allCompanies = [];
 User.userAnswers = [];
 
 // access el from DOM
-var languageOne = document.getElementById('language1');
+// var languageOne = document.getElementById('language1');
 
 var formElement = document.getElementById('formSubmit');
 
 // arrays with coded answers
 var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
-
 var flexArray = ['flexTrue', 'flexFalse'];
-
 var stressArray = ['pingPong', 'foosball', 'videoGames', 'gym', 'bowling', 'nothing'];
-
 var pressureArray = ['pressureTrue', 'pressureFalse'];
-
 var volunteerArray = ['volunteerTrue', 'volunteerFalse'];
-
 var sizeArray = ['large', 'small'];
 
 function stringifyCompany() {
@@ -90,7 +85,15 @@ function eventHandler(event){
   var pressureInput = event.target.pressure.value;
   var volunteerInput = event.target.volunteer.value;
   var sizeInput = event.target.size.value;
-  // console.log(newLanguage);
+  console.log(languageInput);
+  console.log(flexScheduleInput);
+
+  console.log(stressRelieverInput);
+  console.log(pressureInput);
+  console.log(volunteerInput);
+  console.log(sizeInput);
+  
+  
 }
 
 // functions that interate over the array
