@@ -2,6 +2,8 @@
 
 Company.allCompanies = [];
 
+var counterArray = [];
+
 // user array
 var userAnswers = [];
 
@@ -34,6 +36,7 @@ function Company (name, language, flex, stress, pressure, volunteer, size) {
   this.size = size;
   this.counter = 0;
   Company.allCompanies.push(this);
+  // counterArray.push(this.counter);
 }
 
 // Constructor function for user
@@ -95,6 +98,7 @@ function eventHandler(event){
   // console.log(volunteerInput);
   // console.log(sizeInput);
   compareAnswers();
+  sort();
 }
 
 // create function to compare userAnswers array to each company object
@@ -102,13 +106,44 @@ function compareAnswers(){
   for (var i in Company.allCompanies) {
     // if (userAnswers.includes(Company.allCompanies[i].language[i])){
     //   console.log('Lang');
-    // } 
+    // }
     if(userAnswers.includes(Company.allCompanies[i].flex)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    } if(userAnswers.includes(Company.allCompanies[i].volunteer)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    } if(userAnswers.includes(Company.allCompanies[i].pressure)){
       Company.allCompanies[i].counter++;
       console.log(Company.allCompanies[i].counter);
     }
   }
 }
+
+function sort(){
+  // var max = 0;
+  // var sorted = [];
+  // for (var i = 0; i < Company.allCompanies.length; i++) {
+  //   if(typeof max === undefined){
+  //     // console.log(max);
+  //     // console.log(Company.allCompanies[i].counter);
+  //     Company.allCompanies[i].counter = max;
+  //   }
+  //   console.log(Company.allCompanies[i].counter, max, 'hellocountermax');
+  //   if (Company.allCompanies[i].counter >= max) {
+      
+  //     max = Company.allCompanies[i].counter;
+  //     sorted.unshift(Company.allCompanies[i]);
+      
+  //   }
+  // }
+  var sorted = Company.allCompanies.sort(function(a,b){
+    return b.counter - a.counter;
+  });
+  console.log(sorted);
+
+}
+
 
 
 // remove event listener
@@ -118,6 +153,8 @@ function compareAnswers(){
 // send each company instance and push into local storage (JSON)
 
 // get elements from the DOM
+
+//return company name that is associated with the object that has the highest counter value
 
 companyList();
 stringifyCompany();
