@@ -2,7 +2,7 @@
 
 Company.allCompanies = [];
 
-var counterArray = [];
+// var counterArray = [];
 
 // user array
 var userAnswers = [];
@@ -11,6 +11,8 @@ var userAnswers = [];
 // var languageOne = document.getElementById('language1');
 
 var formElement = document.getElementById('formSubmit');
+
+var ulElement = document.getElementById('results');
 
 // arrays with coded answers
 // var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
@@ -58,15 +60,15 @@ function companyList () {
 
   //company instances
   new Company('starbucks', 'java', 'false', 'false', 'true', 'true', 'large', '../img/starbucks.jpg');
-  new Company('zillow', 'java', 'true', ['pingPong', 'foosball'], 'false', 'true', 'large', '../img/zillow.png');
-  new Company('nordstrom', ['java', 'python'], 'false', 'false', 'false', 'true', 'large', '../img/nordstrom.png');
+  new Company('zillow', 'java', 'true', 'foosball', 'false', 'true', 'large', '../img/zillow.png');
+  new Company('nordstrom', 'python', 'false', 'false', 'false', 'true', 'large', '../img/nordstrom.png');
   new Company('filmic', 'swift', 'true', 'false', 'false', 'false', 'small', '../img/filmic.png');
-  new Company('microsoft', ['javascript', 'asp.net', 'python'], 'true', ['gym', 'foosball'], 'false', 'true', 'large', '../img/microsoft.jpg');
+  new Company('microsoft', 'asp.net', 'true', 'gym', 'false', 'true', 'large', '../img/microsoft.jpg');
   new Company('amazon', 'java', 'true', 'pingPong', 'true', 'true', 'large', '../img/amazon.png');
-  new Company('cdk global', ['java', 'javascript', 'asp.net'], 'true', 'pingPong', 'true', 'true', 'large', '../img/CDK.jpg');
-  new Company('valve', ['asp.net', 'java', 'python', 'javascript'], 'true', 'pingPong', 'true', 'false', 'small', '../img/valve.png');
-  new Company('projekt202', 'javascript', 'true', ['bowling', 'pingPong', 'foosball'], 'false', 'false', 'small', '../img/projekt202.png');
-  new Company('expedia', ['javascript', 'java', 'python'], 'true', 'gym', 'false', 'true', 'large', '../img/expedia.svg');
+  new Company('cdk global', 'javascript', 'true', 'pingPong', 'true', 'true', 'large', '../img/CDK.jpg');
+  new Company('valve', 'python', 'true', 'pingPong', 'true', 'false', 'small', '../img/valve.png');
+  new Company('projekt202', 'javascript', 'true', 'bowling', 'false', 'false', 'small', '../img/projekt202.png');
+  new Company('expedia', 'java', 'true', 'gym', 'false', 'true', 'large', '../img/expedia.svg');
 }
 
 console.log(Company.allCompanies);
@@ -81,7 +83,6 @@ formElement.addEventListener('submit', eventHandler);
 // create event handlers
 function eventHandler(event){
   event.preventDefault();
-
   var userNameInput = localStorage.newUsername;
   var languageInput = event.target.language.value;
   var flexScheduleInput = event.target.flex.value;
@@ -99,21 +100,33 @@ function eventHandler(event){
   // console.log(sizeInput);
   compareAnswers();
   sort();
+  displayResults();
 }
 
 // create function to compare userAnswers array to each company object
 function compareAnswers(){
   for (var i in Company.allCompanies) {
-    // if (userAnswers.includes(Company.allCompanies[i].language[i])){
-    //   console.log('Lang');
-    // }
+    if(userAnswers.includes(Company.allCompanies[i].language)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    }
     if(userAnswers.includes(Company.allCompanies[i].flex)){
       Company.allCompanies[i].counter++;
       console.log(Company.allCompanies[i].counter);
-    } if(userAnswers.includes(Company.allCompanies[i].volunteer)){
+    }
+    if(userAnswers.includes(Company.allCompanies[i].stress)){
       Company.allCompanies[i].counter++;
       console.log(Company.allCompanies[i].counter);
-    } if(userAnswers.includes(Company.allCompanies[i].pressure)){
+    }
+    if(userAnswers.includes(Company.allCompanies[i].pressure)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    }
+    if(userAnswers.includes(Company.allCompanies[i].volunteer)){
+      Company.allCompanies[i].counter++;
+      console.log(Company.allCompanies[i].counter);
+    }
+    if(userAnswers.includes(Company.allCompanies[i].size)){
       Company.allCompanies[i].counter++;
       console.log(Company.allCompanies[i].counter);
     }
@@ -131,10 +144,10 @@ function sort(){
   //   }
   //   console.log(Company.allCompanies[i].counter, max, 'hellocountermax');
   //   if (Company.allCompanies[i].counter >= max) {
-      
+
   //     max = Company.allCompanies[i].counter;
   //     sorted.unshift(Company.allCompanies[i]);
-      
+
   //   }
   // }
   var sorted = Company.allCompanies.sort(function(a,b){
@@ -144,9 +157,17 @@ function sort(){
 
 }
 
+//display results
+function displayResults () {
+  // remove event listener
+  formElement.removeEventListener('submit', eventHandler);
+  for (var i = 0; i < Company.allCompanies.length; i++) {
+    var listElement = document.createElement('li');
+    listElement.textContent = (Company.allCompanies[i].name + ' is your results!');
+    ulElement.appendChild(listElement);
+  }
+}
 
-
-// remove event listener
 
 // functions that interate over the array
 
