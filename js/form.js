@@ -2,6 +2,14 @@
 
 Company.allCompanies = [];
 
+// user array
+User.userAnswers = [];
+
+// access el from DOM
+var languageOne = document.getElementById('language1');
+
+var formElement = document.getElementById('formSubmit');
+
 // arrays with coded answers
 var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
 
@@ -33,6 +41,14 @@ function Company (name, language, flex, stress, pressure, volunteer, size, filep
   Company.allCompanies.push(this);
 }
 
+// Constructor function for user
+function User(username){
+  // this.username = localStorage.newUsername; //gets username from local storage
+  User.userAnswers.push(this); //push all users anwers to userAnswer array
+  console.log(User.username);
+}
+User();
+
 function companyList () {
   var pullCompany = localStorage.getItem('listOfCompanies');
   var readableCompany = JSON.parse(pullCompany);
@@ -62,8 +78,20 @@ console.log(Company.allCompanies);
 // increment into next one
 
 // create event listeners
+formElement.addEventListener('submit', eventHandler);
 
 // create event handlers
+function eventHandler(event){
+  event.preventDefault();
+
+  var languageInput = event.target.language.value;
+  var flexScheduleInput = event.target.flex.value;
+  var stressRelieverInput = event.target.stress.value;
+  var pressureInput = event.target.pressure.value;
+  var volunteerInput = event.target.volunteer.value;
+  var sizeInput = event.target.size.value;
+  // console.log(newLanguage);
+}
 
 // functions that interate over the array
 
