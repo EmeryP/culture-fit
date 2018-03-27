@@ -1,6 +1,8 @@
 'use strict';
 
-// global arrays with coded answers
+Company.allCompanies = [];
+
+// arrays with coded answers
 var languageArray = ['java', 'javascript', 'asp', 'python', 'swift'];
 
 var flexArray = ['flexTrue', 'flexFalse'];
@@ -13,7 +15,6 @@ var volunteerArray = ['volunteerTrue', 'volunteerFalse'];
 
 var sizeArray = ['large', 'small'];
 
-
 //constructor function
 function Company (name, language, flex, stress, pressure, volunteer, size, filepath) {
   this.name = name;
@@ -24,6 +25,7 @@ function Company (name, language, flex, stress, pressure, volunteer, size, filep
   this.volunteer = volunteer;
   this.size = size;
   this.filepath = filepath;
+  Company.allCompanies.push(this);
 }
 
 //company instances
@@ -37,6 +39,8 @@ new Company('CDK Global', ['Java', 'Javascript', 'asp.net'], true, 'Ping Pong', 
 new Company('Valve', ['asp.net', 'Java', 'Python', 'Javascript'], true, 'Ping Pong', true, false, 'Small', '../img/valve.png');
 new Company('Projekt202', 'Javascript', true, ['Bowling League', 'Ping Pong', 'Foosball'], false, false, 'Small', '../img/projekt202.png');
 new Company('Expedia', ['Javascript', 'Java', 'Python'], true, 'Gym', false, true, 'Large', '../img/expedia.svg');
+
+console.log(Company.allCompanies);
 
 // grab each question and push into array
 
