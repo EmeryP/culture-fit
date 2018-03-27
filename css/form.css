@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+ }
+ 
+ header, footer{
+  background: #52525252;
+  height: 90px;
+  padding: 10px;
+  width: 100%;
+ }
+ 
+ /* Header */
+ 
+ header{
+  width: 100%;
+  background: #ccc;
+ }
+ 
+ .header, .footer{
+  max-width: 960px;
+  margin: 0 auto;
+ }
+
+ header img {
+  float: left;
+ }
+ header nav{
+  float: left;
+  line-height: 70px;
+ }
+ 
+ header ul li{
+  display: inline-block;
+  padding: 0px 35px;
+ }
+ /* h1{
+   line-height: 70px;
+   float: right;
+ } */
+
+ /* Main */
+ main{
+  width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+#form{
+  width: 50%;
+  height: 25%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: gray;
+ }
+
+ input{
+   width: 187px;
+ }
