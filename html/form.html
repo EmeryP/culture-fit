@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dream Job Form Page</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/form.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome!</h1>
+      <nav>
+        <ul>
+          <li><a href= "../index.html">HOME</a></li>
+          <li>RESULTS</li>
+          <li>ABOUT US</li>
+          <li>COMPANY BIOS</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div>
+        <form id="formSubmit">
+          <fieldset>
+      
+            <div>
+
+            <legend></legend>
+            
+
+              <p>Please select the language you prefer.</p>
+              <div>
+                <input type="radio" id="language1"
+                  name="language" value="java">
+                <label for="language1">Java</label>
+            
+                <input type="radio" id="language2"
+                  name="language" value="javascript">
+                <label for="language2">JavaScript</label>
+            
+                <input type="radio" id="language3"
+                  name="language" value="asp">
+                <label for="language3">ASP.net</label>
+                            
+                <input type="radio" id="language4"
+                  name="language" value="python">
+                <label for="language4">Python</label>
+            
+                <input type="radio" id="language5"
+                  name="language" value="swift">
+                <label for="language5">Swift</label>
+              </div>
+  
+              
+              <p>Is having a flex-schedule important to you?</p>
+              <p>(Defined as non-traditional hours or work from home options.)</p>
+              <div>
+                <input type="radio" id="flex1"
+                name="flex" value="true">
+                <label for="flex1">Yes</label>
+          
+                <input type="radio" id="flex2"
+                name="flex" value="false">
+                <label for="flex2">No</label>
+              </div>
+
+
+              <p>What type of energetic stress-reliever would you like to have at work?</p>
+              <div>
+                <input type="radio" id="stressReliever1"
+                name="stress" value="pingPong">
+                <label for="stressReliever1">Ping-Pong</label>
+          
+                <input type="radio" id="stressReliever2"
+                name="stress" value="foosball">
+                <label for="stressReliever2">Foosball</label>
+<!-- 
+                <input type="radio" id="stressReliever3"
+                name="stress" value="videoGames">
+                <label for="stressReliever3">Video Games</label> -->
+
+                <input type="radio" id="stressReliever4"
+                name="stress" value="gym">
+                <label for="stressReliever4">Gym</label>
+
+                <input type="radio" id="stressReliever5"
+                name="stress" value="bowling">
+                <label for="stressReliever5">Bowling</label>
+
+                <!-- <input type="radio" id="stressReliever6"
+                name="stress" value="nothing">
+                <label for="stressReliever6">Don't Care</label> -->
+              </div>
+
+              <p>Do you prefer a high-pressure environment?</p>
+              <p>(Defined as multiple projects or fast-paced environment.)</p>
+              <div>
+                <input type="radio" id="pressure1"
+                name="pressure" value="true">
+                <label for="pressure1">Yes</label>
+          
+                <input type="radio" id="pressure1"
+                name="pressure" value="false">
+                <label for="pressure1">No</label>
+              </div>
+
+              <p>Is company-sponsored volunteering important to you?</p>
+              <div>
+                <input type="radio" id="volunteer1"
+                name="volunteer" value="true">
+                <label for="volunteer1">Yes</label>
+          
+                <input type="radio" id="volunteer2"
+                name="volunteer" value="false">
+                <label for="volunteer2">No</label>
+              </div>
+
+              <p>Do you prefer a large company (1000+) or a small company (1000-)?</p>
+              <div>
+                <input type="radio" id="size1"
+                name="size" value="large">
+                <label for="size1">Large</label>
+          
+                <input type="radio" id="size2"
+                name="size" value="small">
+                <label for="size2">Small</label>
+              </div>
+
+              <div>
+                  <button type="submit">Submit</button>
+              </div>
+
+            </form>
+      </div>
+
+      <div>
+        <h2 id="topresult"></h2>
+        <!-- CHART.JS OR RESULTS -->
+      </div>
+      <div id="localStorage">
+        <ul id="results"></ul>
+      </div>
+
+
+
+    </section>
+    <footer></footer>
+
+
+    <script src="../js/form.js"></script>
+  </body>
+
+</html>
+
