@@ -1,58 +1,27 @@
-/* *{
-  box-sizing: border-box;
- } */
- 
- /* header, footer{
-  background: #52525252;
-  height: 90px;
-  padding: 10px;
-  width: 100%;
- } */
- 
- /* Header */
- 
- /* header{
-  width: 100%;
-  background: #ccc;
- }
- 
- .header, .footer{
-  max-width: 960px;
-  margin: 0 auto;
- }
-
- header img {
+.card{
+  border: 2px solid black;
+  width: 30%;
+  height: 200px;
+  margin: 20px 10% 20px;
   float: left;
- }
- header nav{
-  float: left;
-  line-height: 70px;
- }
- 
- header ul li{
-  display: inline-block;
-  padding: 0px 35px;
- } */
- /* h1{
-   line-height: 70px;
-   float: right;
- } */
-
- /* Main */
- /* main{
-  width: 960px;
-  height: 600px;
-  margin: 0 auto;
-  border: 1px solid black;
+  background: #eae7dc;
 }
-#form{
-  width: 50%;
-  height: 25%;
-  margin: 0 auto;
-  margin-top: 50px;
-  background-color: gray;
- }
 
- input{
-   width: 187px;
- } */
+#button{
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 15px;
+    font-family:  'Caveat Brush', cursive;
+    color: #fff;
+    font-size: 20px;
+    background: #1CA3CE;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    margin: 0px 39% 15px 39%;
+  }
+  
+  #btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+    cursor: pointer;
+  }
