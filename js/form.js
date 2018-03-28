@@ -134,25 +134,23 @@ function storingUserAnswers (){
 fromLocalStorage();
 companyList();
 stringifyCompany();
+refreshEventHandler();
 
 
 //PRACTICE AREA FOR ADDING A "REFRESH" BUTTON
 
 //add a new event listener to a fresh button
-
-//html code that is needed for a submit button
-
-
-
-//refreshFormElement = document.getElementById('refreshForm');
-//refreshFormElement.addEventListener('submit', refreshEventHandler);
+var refreshFormElement = document.getElementById('refreshForm');
+refreshFormElement.addEventListener('submit', refreshEventHandler);
 
 
-//add a function to refresh form and turn the other event listener back on
-// function refreshEventHandler() {
-//  formElement.addEventListener('submit', eventHandler);
-//eventHandler();
-// }
+// add a function to refresh form and turn the other event listener back on
+function refreshEventHandler() {
+  formElement.addEventListener('submit', eventHandler);
+  eventHandler();
+
+}
 
 
 //display NEW results while keeping the OLD results
+//can we add an if statement to the function displayResults to check if results already exist and if so, change the greeting or something to distinguish the old results from the new.
