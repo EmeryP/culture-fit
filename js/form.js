@@ -134,7 +134,7 @@ function storingUserAnswers (){
 fromLocalStorage();
 companyList();
 stringifyCompany();
-refreshEventHandler();
+// refreshEventHandler();
 
 
 //PRACTICE AREA FOR ADDING A "REFRESH" BUTTON
@@ -145,9 +145,9 @@ refreshFormElement.addEventListener('submit', refreshEventHandler);
 
 
 // add a function to refresh form and turn the other event listener back on
-function refreshEventHandler() {
+function refreshEventHandler(event) {
   formElement.addEventListener('submit', eventHandler);
-  eventHandler();
+  eventHandler(event);
 
 }
 
