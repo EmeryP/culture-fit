@@ -16,13 +16,10 @@ function setupDataStorage(){
 function getUserName(event){
   event.preventDefault();
   var newUsername = event.target.username.value;
-  storeData();
+  localStorage.setItem('newUsername', newUsername);
 }
 
 formElement.addEventListener('submit', getUserName);
 
-function storeData(){
-  localStorage.setItem('newUsername', event.target.username.value);
-}
 
 setupDataStorage();
