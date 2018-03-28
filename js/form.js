@@ -139,14 +139,21 @@ function storingUserAnswers (){
 fromLocalStorage();
 companyList();
 stringifyCompany();
-// refreshEventHandler();
 
-function refreshEventHandler(event) {
+
+
+//add a new event listener to a fresh button
+var refreshFormElement = document.getElementById('refreshForm');
+refreshFormElement.addEventListener('submit', refreshEventHandler);
+
+
+// add a function to refresh form and turn the other event listener back on
+function refreshEventHandler() {
+
   formElement.addEventListener('submit', eventHandler);
 
-  var removeUL = document.querySelector('#topresult');
+  var removeUL = document.querySelector('#results');
   removeUL.parentNode.removeChild(removeUL);
+
   localStorage.removeItem('userListResults');
 }
-
-
