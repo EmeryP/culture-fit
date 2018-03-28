@@ -56,6 +56,7 @@ formElement.addEventListener('submit', eventHandler);
 // create event handlers
 function eventHandler(event){
   event.preventDefault();
+
   var userNameInput = localStorage.newUsername;
   var languageInput = event.target.language.value;
   var flexScheduleInput = event.target.flex.value;
@@ -63,8 +64,10 @@ function eventHandler(event){
   var pressureInput = event.target.pressure.value;
   var volunteerInput = event.target.volunteer.value;
   var sizeInput = event.target.size.value;
+
   userAnswers = [];
   userAnswers.push(userNameInput, languageInput, flexScheduleInput, stressRelieverInput, pressureInput, volunteerInput, sizeInput);
+
   compareAnswers();
   sort();
   storingUserAnswers();
@@ -123,6 +126,8 @@ function displayResults (listOfResults) {
   }
   var storedString = JSON.stringify(listOfResults);
   localStorage.setItem('userListResults', storedString);
+
+  document.getElementById('button').disabled = true;
 }
 
 // send user's results into local storage (JSON)
@@ -136,21 +141,12 @@ companyList();
 stringifyCompany();
 // refreshEventHandler();
 
+function refreshEventHandler(event) {
+  formElement.addEventListener('submit', eventHandler);
 
-//PRACTICE AREA FOR ADDING A "REFRESH" BUTTON
-
-//add a new event listener to a fresh button
-// var refreshFormElement = document.getElementById('refreshForm');
-// refreshFormElement.addEventListener('submit', refreshEventHandler);
-
-
-// add a function to refresh form and turn the other event listener back on
-// function refreshEventHandler() {
-//   formElement.addEventListener('submit', eventHandler);
-//   eventHandler();
-
-// }
+  var removeUL = document.querySelector('#topresult');
+  removeUL.parentNode.removeChild(removeUL);
+  localStorage.removeItem('userListResults');
+}
 
 
-//display NEW results while keeping the OLD results
-//can we add an if statement to the function displayResults to check if results already exist and if so, change the greeting or something to distinguish the old results from the new.
