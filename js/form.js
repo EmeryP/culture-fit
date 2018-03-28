@@ -148,7 +148,9 @@ refreshFormElement.addEventListener('submit', refreshEventHandler);
 function refreshEventHandler() {
   formElement.addEventListener('submit', eventHandler);
   eventHandler();
+
 }
 
 
 //display NEW results while keeping the OLD results
+//can we add an if statement to the function displayResults to check if results already exist and if so, change the greeting or something to distinguish the old results from the new.
