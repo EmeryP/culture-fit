@@ -3,7 +3,7 @@
  }
  
  header, footer{
-  background: #52525252;
+  background: #eae7dc;
   height: 90px;
   padding: 10px;
   width: 100%;
@@ -13,7 +13,7 @@
  
  header{
   width: 100%;
-  background: #ccc;
+  background: 	#eae7dc;
  }
  
  .header, .footer{
@@ -26,17 +26,32 @@
  }
  header nav{
   float: left;
-  line-height: 70px;
+  line-height: 80px;
  }
  
  header ul li{
   display: inline-block;
-  padding: 0px 35px;
+  padding: 0px 35px 0px 20px;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 20px;
  }
- /* h1{
-   line-height: 70px;
-   float: right;
- } */
+
+ #logo{
+   height: 70px;
+   margin-top: 10px;
+   border-radius: 35px;
+   /* color: #1CA3CE; */
+ }
+
+ #logo:hover{
+   transform: scale(1.1);
+ }
+ li h1{
+   font-family: 'Permanent Marker', cursive;
+   color: black;
+   font-size: 25px;
+   margin-right: 250px;
+ }
 
  /* Main */
  main{
@@ -45,14 +60,77 @@
   margin: 0 auto;
   border: 1px solid black;
 }
+
+main h2{
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 25px;
+  color: black;
+  margin-top: 2%;
+
+}
 #form{
   width: 50%;
   height: 25%;
   margin: 0 auto;
-  margin-top: 50px;
-  background-color: gray;
+  margin-top: 10%;
+  background-color: #eae7dc;
+  border-radius: 30px;
+  box-shadow:
+                1px 1px #53a7ea,
+                2px 2px #53a7ea,
+                3px 3px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
  }
 
- input{
-   width: 187px;
+ #usernameInput{
+  width: 50%;
+  height: 30px;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  border: 2px solid #305A72;
+  margin: 25px 25%;
  }
+
+ #btn {
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family:  'Caveat Brush', cursive;
+  color: #fff;
+  font-size: 20px;
+  background: #3498db;
+  padding: 7.5px 15px 7.5px 15px;
+  text-decoration: none;
+  margin: 0px 38%;
+}
+
+#btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Footer */
+footer{
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer{
+  text-align: center;
+
+}
+#footerLogo{
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+
+}
+
+#companyLogo{
+  height: 50px;
+
+}
