@@ -49,12 +49,17 @@ html{
  header li h1{
    font-family: 'Permanent Marker', cursive;
    color: black;
-   font-size: 35px;
-   margin-right: 350px;
+   font-size: 40px;
+   margin-right: 325px;
  }
 
  li a{
-  color: #1CA3CE
+  color: #1CA3CE;
+  font-size: 27px;
+ }
+
+ a:hover {
+  color: #3cb0fd;
  }
 
  /* Main */
@@ -105,7 +110,7 @@ main h2{
   font-family:  'Caveat Brush', cursive;
   color: #fff;
   font-size: 20px;
-  background: #3498db;
+  background: #1CA3CE;
   padding: 5px 10px 5px 10px;
   text-decoration: none;
   margin: 0px 39% 15px 39%;
