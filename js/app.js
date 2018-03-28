@@ -1,6 +1,7 @@
 'use strict';
 
 var formElement = document.getElementById('usernameForm');
+var userWelcome = document.getElementById('ulElement');
 
 function setupDataStorage(){
   var storedUsername = localStorage.getItem('newUsername');
@@ -9,10 +10,6 @@ function setupDataStorage(){
     console.log('Loaded from Local Storage');
     return;
   }
-  //do not do this here
-  // else{
-  //   alert('Please enter your name!');
-  // }
 }
 console.log('Doing it the hard way');
 
@@ -22,6 +19,7 @@ function getUserName(event){
   if(newUsername && newUsername.length){
     //if username has a length, say welcome back to user append an li to the ul with the content
     alert('welcome ' + newUsername);
+
   }
 
   storeData();
