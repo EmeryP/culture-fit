@@ -5,13 +5,10 @@ Company.allCompanies = [];
 // user array
 var userAnswers = [];
 
-var storedResults = [];
-
 // access el from DOM
 var formElement = document.getElementById('formSubmit');
 var ulElement = document.getElementById('results');
 var h2Element = document.getElementById('topresult');
-// var divElement = document.getElementById('localStorage');
 
 function stringifyCompany() {
   var saveCompany = JSON.stringify(Company.allCompanies);
@@ -71,7 +68,6 @@ function eventHandler(event){
   compareAnswers();
   sort();
   storingUserAnswers();
-  // fromLocalStorage();
   displayResults(Company.allCompanies);
 }
 
@@ -108,26 +104,8 @@ function sort(){
 
 function fromLocalStorage() {
   var userResults = localStorage.getItem('userListResults');
-  //   console.log(userResults, 'Christmas');
   var useableResults = JSON.parse(userResults);
   displayResults(useableResults);
-  // console.log(useableResults, 'One Two');
-  // console.log(userResults, 'Molly!');
-  // if (useableAnswers && useableAnswers.length){
-  //   console.log(useableAnswers.length, 'yoo yo yo');
-  //   userAnswers = useableAnswers;
-  //   console.log(userAnswers, 'I saiiiiid');
-  //   console.log('My mom is here');
-  //   h2Element.textContent = 'Here are your personalized results, ' + localStorage.newUsername + '!';
-  //   console.log(localStorage.newUsername, 'oooooo');
-  //   for (var i = 0; i < Company.allCompanies.length; i++) {
-  //     var listElement = document.createElement('li');
-  //     listElement.textContent = (Company.allCompanies[i].name + ' matched ' + Company.allCompanies[i].counter + ' of your preferences.');
-  //     ulElement.appendChild(listElement);
-  //   }
-  // } else {
-  //   displayResults();
-  // }
 }
 
 //display results
@@ -145,7 +123,6 @@ function displayResults (listOfResults) {
   }
   var storedString = JSON.stringify(listOfResults);
   localStorage.setItem('userListResults', storedString);
-  console.log(storedString);
 }
 
 // send user's results into local storage (JSON)
