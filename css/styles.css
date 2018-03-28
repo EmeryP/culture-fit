@@ -1,11 +1,10 @@
-html{
-  /* overflow: hidden; */
-}
-
-
 
 *{
   box-sizing: border-box;
+ }
+
+ body{
+   height: 100%;
  }
  
  header, footer{
@@ -25,7 +24,6 @@ html{
   float: left;
  }
  header nav{
-  /* float: right; */
   line-height: 80px;
  }
  
@@ -65,9 +63,12 @@ html{
  /* Main */
  main{
   height: -webkit-fill-available;
+  /* min-height: 100%; */
   margin: 0 auto;
+  margin-bottom: -90px;
   padding: .1px;
   background-image: linear-gradient(#757780, #fff);
+  /* overflow: hidden; */
 }
 
 main h2{
@@ -82,7 +83,7 @@ main h2{
   width: 35%;
   height: 30%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 5%;
   background-color: #eae7dc;
   border-radius: 30px;
   box-shadow:
@@ -126,11 +127,16 @@ main h2{
 /* Footer */
 footer{
   /* position: absolute; */
+  /* bottom: 0; */
   margin-bottom: -90px;
+  /* height: 90px; */
+  /* z-index: -1; */
 }
 
 .footer{
   text-align: center;
+  /* margin-bottom: -90px; */
+  
 }
 
 #footerLogo{
@@ -139,12 +145,27 @@ footer{
   margin-top: 15px;
 }
 
-#companyLogo{
-  height: 50px;
+#companyLogos, #companyLogo2{
+  display: inline-flex;
+  position: absolute;
+  bottom: 0px;
+  
 }
 
+#company{
+  width: 50%;
+}
 #userwelcome {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 35px;
+  font-family: 'Permanent Marker', cursive;
+  color: yellow;
   }
 
+#partners{
+  text-align: center;
+  margin-top: 100px;
+  font-family:  'Caveat Brush', cursive;
+  font-size: 30px;
+}

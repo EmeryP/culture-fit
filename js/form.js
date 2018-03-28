@@ -134,22 +134,22 @@ function storingUserAnswers (){
 fromLocalStorage();
 companyList();
 stringifyCompany();
-refreshEventHandler();
+// refreshEventHandler();
 
 
 //PRACTICE AREA FOR ADDING A "REFRESH" BUTTON
 
 //add a new event listener to a fresh button
-var refreshFormElement = document.getElementById('refreshForm');
-refreshFormElement.addEventListener('submit', refreshEventHandler);
+// var refreshFormElement = document.getElementById('refreshForm');
+// refreshFormElement.addEventListener('submit', refreshEventHandler);
 
 
 // add a function to refresh form and turn the other event listener back on
-function refreshEventHandler() {
-  formElement.addEventListener('submit', eventHandler);
-  eventHandler();
+// function refreshEventHandler() {
+//   formElement.addEventListener('submit', eventHandler);
+//   eventHandler();
 
-}
+// }
 
 
 //display NEW results while keeping the OLD results

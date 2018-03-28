@@ -4,7 +4,27 @@
   height: 200px;
   margin: 20px 10% 20px;
   float: left;
-  background: #eae7dc;
+  background: linear-gradient(to left, #eae7dc, white);
+  box-shadow:
+                1px 1px #000,
+                2px 2px #000,
+                3px 3px #000;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+}
+
+.card p{
+  font-family:  'Caveat Brush', cursive;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  margin: 20px auto;
+}
+
+.card li{
+  font-family: 'Sriracha', cursive;
+  font-size: 18px;
+  color: black;
 }
 
 #button{
@@ -20,8 +40,44 @@
     margin: 0px 39% 15px 39%;
   }
   
-  #btn:hover {
+  #button:hover {
     background: #3cb0fd;
     text-decoration: none;
     cursor: pointer;
   }
+
+  #localStorage{
+    width: 80%;
+    margin: 40px auto;
+  }
+
+  #results li{
+    padding:10px;
+    width:350px;
+    border:1px solid #000;
+    display: block;
+  }
+
+  #testAgain{
+      -webkit-border-radius: 60;
+      -moz-border-radius: 60;
+      border-radius: 15px;
+      font-family:  'Caveat Brush', cursive;
+      color: #fff;
+      font-size: 20px;
+      background: #1CA3CE;
+      padding: 5px 10px 5px 10px;
+      text-decoration: none;
+      margin: 0px 39% 15px 39%;
+    }
+    
+    #testAgain:hover {
+      background: #3cb0fd;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    input{
+      height: 18px;
+      width: 18px;
+    }
