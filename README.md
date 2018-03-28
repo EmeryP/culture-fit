@@ -1,6 +1,5 @@
-# culture-fit
 Helping Code Fellows grads find jobs they want.
----
+****
 
 # Culture Fit
 
@@ -51,3 +50,7 @@ This project is licensed under the MIT License. Please see the LICENSE.md for mo
 ## Acknowledgments
 Thank you to the creators of [Bro Nachos](http://bronacho.com/) for inspiring the matching functionality of our base concept and for [Quiz Fellows](https://ccloops.github.io/quiz-fellows/index.html) creators for inspiring us with a quiz style game.
 
+## Deployment
+Git Hub: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
+
+Live Site: [Culture Fit]()
