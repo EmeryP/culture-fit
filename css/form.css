@@ -1,17 +1,17 @@
-*{
+/* *{
   box-sizing: border-box;
- }
+ } */
  
- header, footer{
+ /* header, footer{
   background: #52525252;
   height: 90px;
   padding: 10px;
   width: 100%;
- }
+ } */
  
  /* Header */
  
- header{
+ /* header{
   width: 100%;
   background: #ccc;
  }
@@ -32,14 +32,14 @@
  header ul li{
   display: inline-block;
   padding: 0px 35px;
- }
+ } */
  /* h1{
    line-height: 70px;
    float: right;
  } */
 
  /* Main */
- main{
+ /* main{
   width: 960px;
   height: 600px;
   margin: 0 auto;
@@ -55,4 +55,4 @@
 
  input{
    width: 187px;
- }
+ } */

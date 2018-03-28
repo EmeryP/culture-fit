@@ -1,6 +1,8 @@
 html{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
+
 
 *{
   box-sizing: border-box;
@@ -9,16 +11,10 @@ html{
  header, footer{
   background: #eae7dc;
   height: 90px;
-  padding: 10px;
   width: 100%;
  }
  
  /* Header */
- 
- header{
-  width: 100%;
-  background: 	#eae7dc;
- }
  
  .header, .footer{
   max-width: 960px;
@@ -29,7 +25,7 @@ html{
   float: left;
  }
  header nav{
-  float: left;
+  /* float: right; */
   line-height: 80px;
  }
  
@@ -50,11 +46,11 @@ html{
  #logo:hover{
    transform: scale(1.1);
  }
- li h1{
+ header li h1{
    font-family: 'Permanent Marker', cursive;
    color: black;
-   font-size: 25px;
-   margin-right: 250px;
+   font-size: 35px;
+   margin-right: 350px;
  }
 
  li a{
@@ -63,7 +59,6 @@ html{
 
  /* Main */
  main{
-  width: 100%;
   height: -webkit-fill-available;
   margin: 0 auto;
   padding: .1px;
@@ -73,8 +68,8 @@ html{
 main h2{
   text-align: center;
   font-family: 'Caveat Brush', cursive;
-  font-size: 25px;
-  color: black;
+  font-size: 30px;
+  color: white;
   margin-top: 2%;
 
 }
@@ -125,22 +120,21 @@ main h2{
 
 /* Footer */
 footer{
-  position: absolute;
-  bottom: 0px;
+  /* position: absolute; */
+  margin-bottom: -90px;
 }
 
 .footer{
   text-align: center;
-
 }
+
 #footerLogo{
   height: 40px;
   border-radius: 20px;
   margin-top: 15px;
-
 }
 
 #companyLogo{
   height: 50px;
-
 }
+

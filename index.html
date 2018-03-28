@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel = "stylesheet" href="css/styles.css">
     <link rel = "stylesheet" href="css/reset.css">
+    <link rel = "stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Permanent+Marker|Rock+Salt" rel="stylesheet">
-    <title>Culture Fit</title>   
+    <title>Culture Fit</title>
+    <meta property="og:title" content="Culture Fit" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="file:///C:/Users/Emery_2/Code%20Fellows/201/Final%20Project/culture-fit/index.html" />
+    <meta property="og:image" content="img/culture-fit-smallest.png" />
   </head>
   <body>
       <header>
@@ -14,7 +18,7 @@
               <ul>
                 <li><h1>Culture Fit</h1></li>
                 <li><a href= "#">Home</a></li>
-                <li><a href= "html/form.html">Results</a></li>
+                <!-- <li><a href= "html/form.html">Results</a></li> -->
                 <li><a href= "html/about.html">About Us</a></li>
               </ul>
             </nav>
@@ -29,9 +33,9 @@
                 <ul>
                   <li>
                     <label for="username"></label>
-                    <input type="text" name="username" id="usernameInput" placeholder="First Name">
+                    <input type="text" required name="username" id="usernameInput" placeholder="First Name">
                   </li>
-                  <input type="submit" onclick="location.href='html/form.html';" value="Match Me!" id="btn"/>
+                  <input type="submit" onclick="location.href='html/form.html';" value="Match Me!" id="btn" required/>
                 </ul>
               </fieldset>
             </form>
