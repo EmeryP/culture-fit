@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel = "stylesheet" href="css/reset.css">
     <link rel = "stylesheet" href="css/styles.css">
-    <link rel = "stylesheet" href="css/reset.css"> 
-    <title>Job Culture Fit</title>   
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Permanent+Marker|Rock+Salt" rel="stylesheet">
+    <title>Culture Fit</title>
+    <meta property="og:title" content="Culture Fit" />
+    <meta property="og:type" content="webpage" />
+    <meta property="og:url" content="file:///C:/Users/Emery_2/Code%20Fellows/201/Final%20Project/culture-fit/index.html" />
+    <meta property="og:image" content="img/culture-fit-smallest.png" />
   </head>
   <body>
       <header>
           <div class="header">
-            <img src="http://placehold.it/200x70/000">
+            <a href="index.html"><img id="logo" src="img/culture-fit-smallest.png"></a>
             <nav>
               <ul>
+                <li><h1>Culture Fit</h1></li>
                 <li><a href= "#">Home</a></li>
-                <li><a href= "html/form.html">Results</a></li>
+                <!-- <li><a href= "html/form.html">Results</a></li> -->
                 <li><a href= "html/about.html">About Us</a></li>
-                <li><h1>Dream Job Culture Fit</h1></li>
               </ul>
             </nav>
           </div>
         </header>
-        <!-- TODO: link up form imput to local storage and add event listener-->
+        
         <main>
-          <h2>Helping Code Fellows Grads Find Jobs They'll Love</h2>
+          <h2>Matching Code Fellows Grads With Jobs They'll Love</h2>
           <div id= "form">
           <form id="usernameForm">
               <fieldset>
-                <legend>Please enter your name:</legend>
                 <ul>
                   <li>
                     <label for="username"></label>
-                    <input type="text" name="username" id="usernameInput">
+                    <input type="text" required name="username" id="usernameInput" placeholder="First Name">
                   </li>
-                  <!-- <button type="submit">
-                    <a href ="html/form.html">
-                      Take me to the questionnaire</a>
-                  </button> -->
-                  <input type="submit" onclick="location.href='html/form.html';" value="Go to Questionaire" />
+                  <input type="submit" onclick="location.href='html/form.html';" value="Match Me!" id="btn" required/>
                 </ul>
               </fieldset>
             </form>
@@ -43,7 +43,7 @@
           <div>
             <ul>
               <!-- TODO: add images -->
-              <li><a></a></li>
+              <!-- <li><a><img src="img/amazon.png" alt="" id="companyLogo"></a></li> -->
               <li><a></a></li>
               <li><a></a></li>
               <li><a></a></li>
@@ -60,9 +60,8 @@
               <div class="footer">
                 <nav>
                   <ul>
-                    <li><a href= "#">Home</a></li>
-                    <li><a href= "html/form.html">Results</a></li>
-                    <li><a href= "html/about.html">About Us</a></li>
+                    <li><a href= "#"><img id="footerLogo" src="img/culture-fit-smallest.png"></a></li>
+                    <li><p>© 2018 Culture Fit</p></li>
                   </ul>
                 </nav>
               </div>

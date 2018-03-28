@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dream Job Form Page</title>
+    <title>Culture Fit Form Page</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/styles.css">  
+    <link rel="stylesheet" href="../css/form.css">  
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Permanent+Marker|Rock+Salt" rel="stylesheet">
   </head>
 
   <body>
     <header>
-      <h1>Welcome!</h1>
-      <nav>
-        <ul>
-          <li><a href= "../index.html">HOME</a></li>
-          <li>RESULTS</li>
-          <li>ABOUT US</li>
-          <li>COMPANY BIOS</li>
-        </ul>
-      </nav>
+      <div class="header">
+        <a href="../index.html"><img id="logo" src="../img/culture-fit-smallest.png"></a>
+        <nav>
+          <ul>
+            <li><h1>Culture Fit</h1></li>
+            <li><a href= "../index.html">Home</a></li>
+            <!-- <li><a href= "#">Results</a></li> -->
+            <li><a href= "about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <main>
     <section>
       <div>
         <form id="formSubmit">
@@ -75,10 +80,6 @@
                 <input type="radio" id="stressReliever2"
                 name="stress" value="foosball">
                 <label for="stressReliever2">Foosball</label>
-<!-- 
-                <input type="radio" id="stressReliever3"
-                name="stress" value="videoGames">
-                <label for="stressReliever3">Video Games</label> -->
 
                 <input type="radio" id="stressReliever4"
                 name="stress" value="gym">
@@ -88,9 +89,6 @@
                 name="stress" value="bowling">
                 <label for="stressReliever5">Bowling</label>
 
-                <!-- <input type="radio" id="stressReliever6"
-                name="stress" value="nothing">
-                <label for="stressReliever6">Don't Care</label> -->
               </div>
 
               <p>Do you prefer a high-pressure environment?</p>
@@ -136,18 +134,23 @@
 
       <div>
         <h2 id="topresult"></h2>
-        <!-- CHART.JS OR RESULTS -->
       </div>
       <div id="localStorage">
         <ul id="results"></ul>
       </div>
 
-
-
     </section>
-    <footer></footer>
-
-
+    </main>
+    <footer>
+      <div class="footer">
+        <nav>
+          <ul>
+            <li><a href= "#"><img id="footerLogo" src="../img/culture-fit-smallest.png"></a></li>
+            <li><p>© 2018 Culture Fit</p></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>   
     <script src="../js/form.js"></script>
   </body>
 
