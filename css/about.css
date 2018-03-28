@@ -1,11 +1,11 @@
-html{
-  /* overflow: hidden; */
-}
-
 *{
   box-sizing: border-box;
  }
- 
+
+ /* body {
+  background-image: linear-gradient(#fff, #757780);
+ } */
+
  header, footer{
   background: #eae7dc;
   height: 90px;
@@ -61,21 +61,14 @@ html{
  }
 
  /* Main */
+
  main{
-  height: -webkit-fill-available;
-  margin: 0 auto;
-  padding: .1px;
-  background-image: linear-gradient(#757780, #fff);
+   width: 960px;
+   text-align: center;
+   position: relative;
+   margin: 0 auto;
 }
 
-main h2{
-  text-align: center;
-  font-family: 'Caveat Brush', cursive;
-  font-size: 30px;
-  color: white;
-  margin-top: 2%;
-
-}
 #form{
   width: 35%;
   height: 30%;
@@ -148,4 +141,35 @@ footer{
 
 .photos {
   height: 300px;
+}
+
+.card {
+  margin: 0.5em;
+  height: 574px;
+  overflow: scroll;
+}
+
+.card header {
+  background-color: #757780;
+  color: #EAE7DC;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 2.6em;
+  margin-top: 0.3em;
+  width: 450px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.card p {
+  width: 450px;
+  text-indent:5px;
+  margin-bottom: 10px;
+}
+
+section {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  outline: 1px solid #757780;
 }
