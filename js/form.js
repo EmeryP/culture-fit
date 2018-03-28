@@ -139,7 +139,7 @@ function storingUserAnswers (){
 fromLocalStorage();
 companyList();
 stringifyCompany();
-refreshEventHandler();
+// refreshEventHandler();
 
 
 //add a new event listener to a fresh button
@@ -148,8 +148,9 @@ refreshFormElement.addEventListener('submit', refreshEventHandler);
 
 
 // add a function to refresh form and turn the other event listener back on
-function refreshEventHandler() {
+function refreshEventHandler(event) {
   formElement.addEventListener('submit', eventHandler);
+
   var removeUL = document.querySelector('#topresult');
   removeUL.parentNode.removeChild(removeUL);
   localStorage.removeItem('userListResults');

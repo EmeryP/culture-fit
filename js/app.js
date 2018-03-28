@@ -2,6 +2,7 @@
 
 var formElement = document.getElementById('usernameForm');
 var userWelcome = document.getElementById('userwelcome');
+var userNameInput = document.getElementById('usernameInput');
 
 function setupDataStorage(){
   var storedUsername = localStorage.getItem('newUsername');
@@ -9,6 +10,7 @@ function setupDataStorage(){
     var pElement = document.createElement('p');
     pElement.textContent = ('Welcome back, ' + storedUsername + '!');
     userWelcome.appendChild(pElement);
+    userNameInput.setAttribute('class','hide-me');
     return;
   }
 }
@@ -20,6 +22,5 @@ function getUserName(event){
 }
 
 formElement.addEventListener('submit', getUserName);
-
 
 setupDataStorage();
