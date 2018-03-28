@@ -141,13 +141,6 @@ companyList();
 stringifyCompany();
 // refreshEventHandler();
 
-
-//add a new event listener to a fresh button
-var refreshFormElement = document.getElementById('refreshForm');
-refreshFormElement.addEventListener('submit', refreshEventHandler);
-
-
-// add a function to refresh form and turn the other event listener back on
 function refreshEventHandler(event) {
   formElement.addEventListener('submit', eventHandler);
 
@@ -155,4 +148,5 @@ function refreshEventHandler(event) {
   removeUL.parentNode.removeChild(removeUL);
   localStorage.removeItem('userListResults');
 }
+
 
