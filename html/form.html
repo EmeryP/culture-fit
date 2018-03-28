@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Culture Fit Form Page</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">  
+    <link rel="stylesheet" href="../css/form.css">  
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Permanent+Marker|Rock+Salt" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <a href="../index.html"><img id="logo" src="../img/culture-fit-smallest.png"></a>
+        <nav>
+          <ul>
+            <li><h1>Culture Fit</h1></li>
+            <li><a href= "../index.html">Home</a></li>
+            <!-- <li><a href= "#">Results</a></li> -->
+            <li><a href= "about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+    <section>
+
+      <div>
+        <form id="formSubmit">
+          <fieldset>
+      
+            <div>
+
+            <legend></legend>
+            
+              <div class="card">
+                <p>Which is your prefered language?</p>
+                <div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="language1"
+                        name="language" value="java">
+                      <label for="language1">Java</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="language2"
+                        name="language" value="javascript">
+                      <label for="language2">JavaScript</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="language3"
+                        name="language" value="asp">
+                      <label for="language3">ASP.net</label>
+                    </li>
+                    <li>        
+                      <input type="radio" id="language4"
+                        name="language" value="python">
+                      <label for="language4">Python</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="language5"
+                        name="language" value="swift">
+                      <label for="language5">Swift</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="card">
+                <p>Do you prefer a flex-schedule and to work from home?</p>
+                <div>
+                  <ul>
+                    <li> 
+                      <input type="radio" id="flex1"
+                      name="flex" value="true">
+                      <label for="flex1">Yes</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="flex2"
+                      name="flex" value="false">
+                      <label for="flex2">No</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <p>What is your prefered stress-reliever?</p>
+                <div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="stressReliever1"
+                      name="stress" value="pingPong">
+                      <label for="stressReliever1">Ping-Pong</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="stressReliever2"
+                      name="stress" value="foosball">
+                      <label for="stressReliever2">Foosball</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="stressReliever4"
+                      name="stress" value="gym">
+                      <label for="stressReliever4">Gym</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="stressReliever5"
+                      name="stress" value="bowling">
+                      <label for="stressReliever5">Bowling</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <p>Do you prefer a high-pressure environment?</p>
+                <p>(Defined as multiple projects or fast-paced environment.)</p>
+                <div>
+                    <ul>
+                      <li>
+                        <input type="radio" id="pressure1"
+                        name="pressure" value="true">
+                        <label for="pressure1">Yes</label>
+                      </li>
+                      <li>
+                        <input type="radio" id="pressure1"
+                        name="pressure" value="false">
+                        <label for="pressure1">No</label>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <p>Is company-sponsored volunteering important to you?</p>
+                <div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="volunteer1"
+                      name="volunteer" value="true">
+                      <label for="volunteer1">Yes</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="volunteer2"
+                      name="volunteer" value="false">
+                      <label for="volunteer2">No</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card">
+                <p>Do you prefer a large company (1000+) or a small company (1000-)?</p>
+                <div>
+                  <ul>
+                    <li>
+                      <input type="radio" id="size1"
+                      name="size" value="large">
+                      <label for="size1">Large</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="size2"
+                      name="size" value="small">
+                      <label for="size2">Small</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                  <button type="submit" id="button">Submit</button>
+              </div>
+
+            </form>
+      </div>
+
+      <div>
+        <h2 id="topresult"></h2>
+      </div>
+      <div id="localStorage">
+        <ul id="results"></ul>
+      </div>
+
+      <div>
+          <form id="refreshForm">
+            <fieldset>
+              <div>
+                <button type="submit">Refresh Form</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+    </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <nav>
+          <ul>
+            <li><a href= "#"><img id="footerLogo" src="../img/culture-fit-smallest.png"></a></li>
+            <li><p>© 2018 Culture Fit</p></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>   
+    <script src="../js/form.js"></script>
+  </body>
+
+</html>
+

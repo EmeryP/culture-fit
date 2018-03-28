@@ -1,0 +1,27 @@
+.card{
+  border: 2px solid black;
+  width: 30%;
+  height: 200px;
+  margin: 20px 10% 20px;
+  float: left;
+  background: #eae7dc;
+}
+
+#button{
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 15px;
+    font-family:  'Caveat Brush', cursive;
+    color: #fff;
+    font-size: 20px;
+    background: #1CA3CE;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    margin: 0px 39% 15px 39%;
+  }
+  
+  #btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+    cursor: pointer;
+  }
