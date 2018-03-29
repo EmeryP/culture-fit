@@ -10,11 +10,11 @@ function setupDataStorage(){
     var pElement = document.createElement('p');
     pElement.textContent = ('Welcome back, ' + storedUsername + '!');
     userWelcome.appendChild(pElement);
-    userNameInput.setAttribute('class','hide-me');
+    formElement.remove();
+    //get rid of input instead of just hiding
     return;
   }
 }
-
 function getUserName(event){
   event.preventDefault();
   var newUsername = event.target.username.value;
