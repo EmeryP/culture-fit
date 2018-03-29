@@ -175,3 +175,11 @@ footer{
 .hide-me {
   display: none;
 }
+
+/* .companyLogos li img#company:hover{
+  transform: scale(1.1);
+}
+
+.companyLogos li img#company {
+  transition: all .2s ease-in-out; 
+} */
