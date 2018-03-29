@@ -68,14 +68,6 @@
   background-image: linear-gradient(#757780, #fff);
 }
 
-main h2{
-  text-align: center;
-  font-family: 'Caveat Brush', cursive;
-  font-size: 30px;
-  color: white;
-  margin-top: 2%;
-
-}
 #form{
   width: 35%;
   height: 30%;

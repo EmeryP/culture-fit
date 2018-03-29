@@ -72,6 +72,8 @@ function eventHandler(event){
   sort();
   storingUserAnswers();
   displayResults(Company.allCompanies);
+
+  window.location.href='../html/form.html#topresult';
 }
 
 // create function to compare userAnswers array to each company object
