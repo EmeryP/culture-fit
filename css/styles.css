@@ -62,10 +62,10 @@
 
  /* Main */
  main{
-  height: -webkit-fill-available;
-  /* min-height: 100%; */
+  /* height: -webkit-fill-available; */
+  min-height: calc(100% - 90px);
   margin: 0 auto;
-  margin-bottom: -90px;
+  /* margin-bottom: -90px; */
   padding: .1px;
   background-image: linear-gradient(#757780, #fff);
   /* overflow: hidden; */
@@ -126,11 +126,7 @@ main h2{
 
 /* Footer */
 footer{
-  /* position: absolute; */
-  /* bottom: 0; */
   margin-bottom: -90px;
-  /* height: 90px; */
-  /* z-index: -1; */
 }
 
 .footer{
@@ -147,7 +143,7 @@ footer{
 
 #companyLogos, #companyLogo2{
   display: inline-flex;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   
 }
