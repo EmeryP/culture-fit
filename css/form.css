@@ -27,6 +27,10 @@
   color: black;
 }
 
+#button-div {
+  width: 1000;
+}
+
 #button{
     -webkit-border-radius: 60;
     -moz-border-radius: 60;
@@ -37,7 +41,8 @@
     background: #1CA3CE;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
-    margin: 0px 39% 15px 39%;
+    margin: 0px 39% 15px 44%;
+
   }
   
   #button:hover {
@@ -69,7 +74,7 @@
       background: #1CA3CE;
       padding: 5px 10px 5px 10px;
       text-decoration: none;
-      margin: 0px 39% 15px 39%;
+      margin: 0px 39% 15px 44%;
     }
     
     #testAgain:hover {
