@@ -19,6 +19,7 @@ function getUserName(event){
   event.preventDefault();
   var newUsername = event.target.username.value;
   localStorage.setItem('newUsername', newUsername);
+  window.location.href='html/form.html';
 }
 
 formElement.addEventListener('submit', getUserName);
