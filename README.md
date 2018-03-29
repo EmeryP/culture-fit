@@ -53,4 +53,4 @@ Thank you to the creators of [Bro Nachos](http://bronacho.com/) for inspiring th
 ## Deployment
 Git Hub: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
 
-Live Site: [Culture Fit]()
+Live Site: [Culture Fit](https://emeryp.github.io/culture-fit/)
