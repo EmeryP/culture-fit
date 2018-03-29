@@ -2,7 +2,8 @@
 
 var formElement = document.getElementById('usernameForm');
 var userWelcome = document.getElementById('userwelcome');
-var userNameInput = document.getElementById('usernameInput');
+var headerList = document.getElementById('header-list');
+var formDiv = document.getElementById('form');
 
 function setupDataStorage(){
   var storedUsername = localStorage.getItem('newUsername');
@@ -10,9 +11,10 @@ function setupDataStorage(){
     var pElement = document.createElement('p');
     pElement.textContent = ('Welcome back, ' + storedUsername + '!');
     userWelcome.appendChild(pElement);
-    formElement.remove();
-    //get rid of input instead of just hiding
+    formDiv.remove();
     return;
+  }else{
+    headerList.remove();
   }
 }
 function getUserName(event){
