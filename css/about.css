@@ -63,7 +63,7 @@
  /* Main */
 
  main{
-   width: 960px;
+   width: 1000px;
    text-align: center;
    position: relative;
    margin: 0 auto;
@@ -172,4 +172,31 @@ section {
   margin-right: auto;
   position: relative;
   outline: 1px solid #757780;
+}
+
+.github img {
+  height: 50px;
+  transition: all .2s ease-in-out; 
+}
+
+.github img:hover { 
+  transform: scale(1.1); 
+}
+
+.linkedin img{
+  height: 50px;
+  transition: all .2s ease-in-out; 
+}
+
+.linkedin img:hover { 
+  transform: scale(1.1); 
+}
+
+.twitter img{ 
+  height: 50px;
+  transition: all .2s ease-in-out; 
+}
+
+.twitter img:hover { 
+  transform: scale(1.1); 
 }
