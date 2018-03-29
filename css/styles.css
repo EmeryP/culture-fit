@@ -162,6 +162,7 @@ footer{
   font-family:  'Caveat Brush', cursive;
   font-size: 30px;
 }
-.hide-me{
+  
+.hide-me {
   display: none;
 }
