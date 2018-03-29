@@ -65,12 +65,14 @@
   }
 
   #results li{
-    padding:10px;
-    width:350px;
-    border:1px solid #000;
+    padding: 15px;
+    width: 390px;
+    border: 1px solid rgb(172, 162, 162);
     display: block;
     margin: 0px auto;
-  }
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
 
   #testAgain{
       -webkit-border-radius: 60;
