@@ -158,4 +158,6 @@ function refreshEventHandler() {
   removeUL.parentNode.removeChild(removeUL);
 
   localStorage.removeItem('userListResults');
+
+  window.location.href='../html/form.html#';
 }
