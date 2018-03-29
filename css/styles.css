@@ -175,3 +175,12 @@ footer{
 .hide-me {
   display: none;
 }
+
+img#company:hover{
+  transform: scale(1.15);
+}
+
+img#company {
+  transition: all .15s ease-in-out; 
+  margin: 0.3em;
+}
