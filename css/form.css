@@ -51,6 +51,14 @@
     cursor: pointer;
   }
 
+  main h2{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+    color: white;
+    margin-top: 2%;
+  }
+
   #localStorage{
     width: 100%;
     margin: 40px auto;
@@ -74,7 +82,7 @@
       background: #1CA3CE;
       padding: 5px 10px 5px 10px;
       text-decoration: none;
-      margin: 0px 39% 15px 44%;
+      margin: 0px 39% 15px 45.5%;
     }
     
     #testAgain:hover {
