@@ -27,6 +27,10 @@
   color: black;
 }
 
+#button-div {
+  width: 1000;
+}
+
 #button{
     -webkit-border-radius: 60;
     -moz-border-radius: 60;
@@ -37,7 +41,8 @@
     background: #1CA3CE;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
-    margin: 0px 39% 15px 39%;
+    margin: 0px 39% 15px 44%;
+
   }
   
   #button:hover {
@@ -46,18 +51,28 @@
     cursor: pointer;
   }
 
+  main h2{
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 30px;
+    color: white;
+    margin-top: 2%;
+  }
+
   #localStorage{
     width: 100%;
     margin: 40px auto;
   }
 
   #results li{
-    padding:10px;
-    width:350px;
-    border:1px solid #000;
+    padding: 15px;
+    width: 390px;
+    border: 1px solid rgb(172, 162, 162);
     display: block;
     margin: 0px auto;
-  }
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
 
   #testAgain{
       -webkit-border-radius: 60;
@@ -69,7 +84,7 @@
       background: #1CA3CE;
       padding: 5px 10px 5px 10px;
       text-decoration: none;
-      margin: 0px 39% 15px 39%;
+      margin: 0px 39% 15px 45.5%;
     }
     
     #testAgain:hover {

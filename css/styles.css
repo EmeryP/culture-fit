@@ -48,7 +48,7 @@
    font-family: 'Permanent Marker', cursive;
    color: black;
    font-size: 40px;
-   margin-right: 325px;
+   margin-right: 150px;
  }
 
  li a{
@@ -74,8 +74,8 @@ main h2{
   font-size: 30px;
   color: white;
   margin-top: 2%;
-
 }
+
 #form{
   width: 35%;
   height: 30%;
@@ -138,11 +138,18 @@ footer{
   margin-top: 15px;
 }
 
-#companyLogos, #companyLogo2{
+#companyLogos{
   display: inline-flex;
   position: relative;
   bottom: 0px;
-  
+  margin-left: 5%;
+}
+
+#companyLogo2{
+  display: inline-flex;
+  position: relative;
+  bottom: 0px;
+  margin-left: 5%;
 }
 
 #company{
@@ -153,14 +160,16 @@ footer{
   margin-top: 40px;
   font-size: 35px;
   font-family: 'Permanent Marker', cursive;
-  color: yellow;
+  color:navy;
   }
 
 #partners{
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 20px;
   font-family:  'Caveat Brush', cursive;
   font-size: 30px;
+  text-decoration: underline;
 }
   
 .hide-me {
