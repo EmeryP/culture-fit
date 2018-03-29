@@ -62,13 +62,10 @@
 
  /* Main */
  main{
-  /* height: -webkit-fill-available; */
   min-height: calc(100% - 90px);
   margin: 0 auto;
-  /* margin-bottom: -90px; */
   padding: .1px;
   background-image: linear-gradient(#757780, #fff);
-  /* overflow: hidden; */
 }
 
 main h2{
@@ -164,7 +161,7 @@ footer{
   margin-top: 100px;
   font-family:  'Caveat Brush', cursive;
   font-size: 30px;
-  
+}
 .hide-me{
   display: none;
 }
