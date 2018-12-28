@@ -10,16 +10,19 @@ Culture Fit is designed to match Code Fellows students and graduates with a work
 * Does the company offer any type of sponsored volunteering program or reimburse you for volunteer hours
 * What size is the company
 
-## Getting Started
-* Used the .eslintrc.json and the .gitignore from the class repo
-* Used the Meyer's css reset
-* Logo was created by using [Free Logo Services](https://www.freelogoservices.com/step3/parent/8321394?lastsave=2270463892ae1af356236ba73d3a87fc)
-* Colors generated using [Coolors](https://coolors.co/cee0dc-757780-1ca3ce-eae7dc-afaab9)
+## Getting Started Locally
+* Fork and clone this repo to your local machine
+* From your cmd line, run `open index.html` to view the app in the browser
+
+## Deployment
+Git Hub: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
+
+Live Site: [Culture Fit](https://emeryp.github.io/culture-fit/)
 
 ## Prerequisites
 There are no prerequisites for using this program.
 
-## Built With
+## Technologies
 This was built using vanilla JavaScript, HTML, and CSS
 
 ## Authors
@@ -48,7 +51,8 @@ This project is licensed under the MIT License. Please see the LICENSE.md for mo
 ## Acknowledgments
 Thank you to the creators of [Bro Nachos](http://bronacho.com/) for inspiring the matching functionality of our base concept and for [Quiz Fellows](https://ccloops.github.io/quiz-fellows/index.html) creators for inspiring us with a quiz style game.
 
-## Deployment
-Git Hub: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
-
-Live Site: [Culture Fit](https://emeryp.github.io/culture-fit/)
+## Resources
+* Used the .eslintrc.json and the .gitignore from the class repo
+* Used the Meyer's css reset
+* Logo was created by using [Free Logo Services](https://www.freelogoservices.com/step3/parent/8321394?lastsave=2270463892ae1af356236ba73d3a87fc)
+* Colors generated using [Coolors](https://coolors.co/cee0dc-757780-1ca3ce-eae7dc-afaab9)
