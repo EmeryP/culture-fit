@@ -15,15 +15,11 @@ Culture Fit is designed to match Code Fellows students and graduates with a work
 * From your cmd line, run `open index.html` to view the app in the browser
 
 ## Deployment
-Git Hub: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
-
-Live Site: [Culture Fit](https://emeryp.github.io/culture-fit/)
-
-## Prerequisites
-There are no prerequisites for using this program.
+* GitHub Repo: [Culture Fit Repo](https://github.com/EmeryP/culture-fit)
+* Live Site: [Culture Fit](https://emeryp.github.io/culture-fit/)
 
 ## Technologies
-This was built using vanilla JavaScript, HTML, and CSS
+Vanilla JavaScript, HTML, and CSS
 
 ## Authors
 ### Madi Peters
@@ -43,7 +39,7 @@ This was built using vanilla JavaScript, HTML, and CSS
 * [Git Hub](https://github.com/AmyCohen)
 
 ## Contributing
-Please see the CONTRIBUTING.md for more inforamtion on our code of conduct, branch naming conventions, and work plan.
+Please see the CONTRIBUTING.md for more information on our code of conduct, branch naming conventions, and work plan.
 
 ## License
 This project is licensed under the MIT License. Please see the LICENSE.md for more details.
