@@ -1,7 +1,5 @@
-Helping Code Fellows grads find jobs they want.
-****
-
 # Culture Fit
+Helping Code Fellows grads find jobs they'll love based on their cultural preferences.
 
 ## Description
 Culture Fit is designed to match Code Fellows students and graduates with a work environment that would be most fitting to thier personal style. As of right now, the pool of companies is limited to 10 that have hired Code Fellows graduates before.  We are measureing on several metrics.
